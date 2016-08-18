@@ -1,7 +1,14 @@
-.block {
+#block {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background-color: blue;
   border: solid black 1px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
 }
