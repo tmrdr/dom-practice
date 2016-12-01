@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("blue").addEventListener("click", function() {
     console.log("blue button clicked");
     var block = document.getElementById("block");
-    block.classList.remove("red");
+    block.classList.remove("red", "yellow");
     block.classList.add("blue");
   });
 
@@ -31,8 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("red").addEventListener("click", function() {
     console.log("red button clicked");
     var block = document.getElementById("block");
-    block.classList.remove("blue");
+    block.classList.remove("blue", "yellow");
     block.classList.add("red");
+    });
+
+  document.getElementById("yellow").addEventListener("click", function(){
+    console.log("yellow");
+    var block = document.getElementById("block");
+    block.classList.remove("blue", "red");
+    block.classList.add("yellow");
   });
 
 });
